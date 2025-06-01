@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a; /* Dark mode background */
+    color: #ffffff; /* White text for dark mode */
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Starry background animation */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.gifer.com/7n7r.gif') repeat; /* Starry looping GIF */
+    z-index: -1;
+    animation: twinkle 20s infinite linear;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00ffcc; /* Neon cyan for title */
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.follower-form {
+    background: rgba(20, 20, 20, 0.9); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+.follower-form h2 {
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+.follower-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.follower-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.follower-form button {
+    background: #00ffcc;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.follower-form button:hover {
+    background: #00cc99;
+}
+
+#result-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #00ffcc;
+}
+
+footer {
+    margin-top: 40px;
+    color: #cccccc;
+}
